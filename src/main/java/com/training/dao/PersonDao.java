@@ -1,4 +1,10 @@
 package com.training.dao;
 
-public class PersonDao {
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public class PersonDao extends IPersonDao {
+    @PersistenceContext
+    private EntityManager em;
+
 }

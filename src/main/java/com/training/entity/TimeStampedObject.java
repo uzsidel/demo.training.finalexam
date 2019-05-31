@@ -1,4 +1,4 @@
-package com.springhibernate.demo.persistence.entity;
+package com.training.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,9 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
 
-@Getter @Setter @MappedSuperclass
+@Getter
+@Setter
+@MappedSuperclass
 abstract class TimeStampedObject implements Serializable {
     @CreationTimestamp
     @Column(name = "created_on", updatable = false)

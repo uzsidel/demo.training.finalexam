@@ -6,9 +6,8 @@ import lombok.Setter;
 import javax.persistence.Entity;
 
 @Entity @Getter @Setter
-public class AnimalType extends DatabaseObject{
-    private Integer legCount;
-    private String terrain;
-
-
+public class Pets {
+    private String name;
+    private String raceName;
+    private String animalType;
 }
